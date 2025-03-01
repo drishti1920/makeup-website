@@ -1,0 +1,16 @@
+.ContactBand{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-xxxl) 0;
+    background-color: var(--background-color);
+    gap: var(--spacing-xl);
+}
+
+.ContactBand h1{
+    font-size: 42.365px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--dark-color);
+}

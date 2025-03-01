@@ -1,0 +1,108 @@
+.not-found-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f5f0e8;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  .not-found-content {
+    max-width: 600px;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .not-found-code {
+    font-size: 120px;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1;
+    color: #000;
+    letter-spacing: -2px;
+  }
+  
+  .not-found-divider {
+    width: 60px;
+    height: 3px;
+    background-color: #000;
+    margin: 20px auto 30px;
+  }
+  
+  .not-found-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 0 20px;
+    color: #000;
+  }
+  
+  .not-found-message {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 40px;
+    color: #333;
+  }
+  
+  .not-found-button {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid #000;
+    transition: all 0.3s ease;
+  }
+  
+  .not-found-button:hover {
+    background-color: transparent;
+    color: #000;
+  }
+  
+  /* Animation for 404 number */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .not-found-code {
+    animation: pulse 2s infinite ease-in-out;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .not-found-code {
+      font-size: 100px;
+    }
+  
+    .not-found-title {
+      font-size: 28px;
+    }
+  
+    .not-found-message {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .not-found-code {
+      font-size: 80px;
+    }
+  
+    .not-found-title {
+      font-size: 24px;
+    }
+  
+    .not-found-content {
+      padding: 20px;
+    }
+  }

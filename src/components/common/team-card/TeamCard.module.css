@@ -1,0 +1,35 @@
+.TeamCardContainer{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+
+}
+
+.TeamImage{
+    width: 455px;
+}
+
+.TeamImage img{
+    width: 100%;
+}
+
+.TeamDetails{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    color: #262626;
+}
+
+.TeamDetails h2{
+    font-size: 1.7rem;
+}
+
+.TeamDetails p{
+    font-size: 18px;
+    color: var(--dark-text-color);
+}
+
+.description{
+    width: 422px;
+    letter-spacing: 0.5px;
+}

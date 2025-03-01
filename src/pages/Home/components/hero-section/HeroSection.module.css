@@ -1,0 +1,85 @@
+.home {
+    min-height: 100vh;
+    background-image: url("../../../../assets/images/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    height: 100vh;
+    min-height: 550px;
+    max-height: 860px;
+    color: #fff;
+    position: relative;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .heroContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+    padding: 0 2rem;
+  }
+  
+  .title {
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .scrollIndicator {
+    margin-top: 2rem;
+    cursor: pointer;
+  }
+  
+  .scrollIndicator span {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+  
+  .scrollIndicator span::before {
+    content: "•";
+    margin-right: 0.5rem;
+  }
+  
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 992px) {
+    .title {
+      font-size: 4rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 3rem;
+    }
+    
+    
+  }
+  
+  @media (max-width: 576px) {
+    .title {
+      font-size: 2.5rem;
+    }
+    
+    .subtitle {
+      font-size: 1rem;
+    }
+  }
