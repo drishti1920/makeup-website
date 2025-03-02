@@ -1,16 +1,43 @@
-.ContactBand{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: var(--spacing-xxxl) 0;
-    background-color: var(--background-color);
-    gap: var(--spacing-xl);
+.ContactBand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-xxxl) var(--spacing-xl);
+  background-color: var(--background-color);
+  gap: var(--spacing-xl);
+  text-align: center;
 }
 
-.ContactBand h1{
-    font-size: 42.365px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    color: var(--dark-color);
+.ContactBand h1 {
+  font-size: 42.365px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: var(--dark-color);
+}
+
+@media (min-width: 2560px) {
+  .ContactBand h1 {
+    font-size: 53.365px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ContactBand {
+    padding: var(--spacing-xxl) var(--spacing-lg);
+  }
+
+  .ContactBand h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .ContactBand {
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+
+  .ContactBand h1 {
+    font-size: 28px;
+  }
 }

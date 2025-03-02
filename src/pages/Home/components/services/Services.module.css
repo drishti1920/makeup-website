@@ -1,5 +1,26 @@
-.serviceGrid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: var(--background-color);
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: var(--background-color);
+  gap: var(--spacing-xl);
+  padding: var(--spacing-xl);
+}
+
+@media (min-width: 2560px) {
+  .serviceGrid {
+    gap: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .serviceGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .serviceGrid {
+    grid-template-columns: 1fr;
+    padding: var(--spacing-lg);
+  }
 }

@@ -1,31 +1,29 @@
-import React from "react";
-import styles from "./Footer.module.css";
-import logo from "../../../assets/images/footer-logo.png";
-import { SiInstagram } from "react-icons/si";
-import { FaFacebookF } from "react-icons/fa";
-import { BsTwitterX } from "react-icons/bs";
+import React from 'react';
+import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer className={styles.footerContainer}>
-      <div className={`${styles.footerColumn} ${styles.column1}`}>
-        <div className={styles.logoContainer}>
-          <img src={logo} alt="company-logo" />
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-logo-section">
+          <div className="logo-container">
+            <h1 className="logo-text">
+              HOUSE<br />
+              ON THE<br />
+              CLOUDS
+            </h1>
+          </div>
         </div>
-        <div className={styles.socialLinks}>
-        <SiInstagram/>
-        <FaFacebookF />
-        <BsTwitterX />
+
+        <div className="footer-middle-section">
+          <p className="location-text">Jaipur, Rajasthan</p>
+          <a href="/privacy-policy" className="privacy-link">Privacy Policy</a>
         </div>
-      </div>
-      <div className={`${styles.footerColumn} ${styles.column2}`}>
-        <li>Jaipur, Rajasthan</li>
-        <li>Terms & Conditions</li>
-        <li>Privacy Policy</li>        
-      </div>
-      <div className={`${styles.footerColumn} ${styles.column3}`}>
-        <p>+91 9089788978</p>
-        <p>shakshi@nowhere.com</p>
+
+        <div className="footer-contact-section">
+          <p className="phone-number">+91 8696144810</p>
+          <p className="email">hello@thestorytimeliners.com</p>
+        </div>
       </div>
     </footer>
   );

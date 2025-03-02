@@ -65,6 +65,18 @@
 }
 
 /* Media Queries for Responsive Design */
+@media (min-width: 2560px) {
+  .card {
+    height: 580px;
+  }
+  .title{
+    font-size: 3.5rem;
+  }
+  .readMore{
+    font-size: 1.8rem;
+  }
+}
+
 @media (max-width: 768px) {
   .card {
     height: 300px;

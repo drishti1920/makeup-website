@@ -65,3 +65,9 @@
 .btn:hover .with-arrow svg {
   transform: translate(4px, -4px);
 } 
+
+@media (min-width: 2560px) {
+  .btn-large{
+    font-size: 2.25rem;
+  }
+}

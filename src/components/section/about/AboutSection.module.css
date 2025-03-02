@@ -41,13 +41,33 @@
   font-size: 1.2rem;
   color: var(--dark-text-color);
   line-height: 1.68;
-  width: 40%;
+  width: 100%;
+  max-width: 500px;
 }
 
 /* Media Queries for Responsive Design */
-@media (max-width: 992px) {
-  .aboutSection {
-    padding: 90px 0;
+@media (min-width: 2560px) {
+  .mainContent {
+    max-width: 1074px;
+  }
+
+  .heading {
+    font-size: 3.5rem;
+  }
+
+  .description {
+    font-size: 3.5rem;
+  }
+
+  .sideText {
+    font-size: 1.8rem;
+    max-width: 780px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .mainContent {
+    max-width: 770px;
   }
 
   .heading {
@@ -55,15 +75,28 @@
   }
 
   .description {
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .contentWrapper {
+    gap: 2rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .description {
     font-size: 1.5rem;
+  }
+  .sideText {
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 768px) {
-  .aboutSection {
-    padding: 70px 0;
-  }
-
   .contentWrapper {
     flex-direction: column;
     gap: 40px;
@@ -84,13 +117,14 @@
   .description {
     font-size: 1.3rem;
   }
+
+  .sideText {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
-  .aboutSection {
-    padding: 50px 0;
-  }
-
   .container {
     width: 95%;
   }

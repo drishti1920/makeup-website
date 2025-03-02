@@ -19,7 +19,6 @@ const Navbar = () => {
   // Track scroll position
   useEffect(() => {
     const handleScroll = () => {
-      // You can adjust this value based on when you want the blur to appear
       const scrollThreshold = 50;
 
       if (window.scrollY > scrollThreshold) {
@@ -29,16 +28,14 @@ const Navbar = () => {
       }
     };
 
-    // Add scroll event listener
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  // Check screen size for responsive design
+  // Update mobile breakpoint check
   useEffect(() => {
     const checkScreenSize = () => {
       setIsMobile(window.innerWidth <= 768);
@@ -71,18 +68,20 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-center">
-          {isHome || isWhiteText ? (
-            <LightLogo className="logo" />
-          ) : (
-            <DarkLogo className="logo" />
-          )}
+          <a href="/">
+            {isHome || isWhiteText ? (
+              <LightLogo className="logo" />
+            ) : (
+              <DarkLogo className="logo" />
+            )}
+          </a>
         </div>
 
         <div className="navbar-right">
           <button className="menu-button" onClick={toggleMenu}>
-            {isMenuOpen ? "Close" : "Menu"}
+            {isMenuOpen ? "close" : "menu"}
           </button>
-          <a href="/reservation" className="reservation-button">
+          <a href="/contacts" className="reservation-button">
             {isMobile ? "Book" : "Reservation"}
           </a>
         </div>
