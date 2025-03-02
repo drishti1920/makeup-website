@@ -1,17 +1,29 @@
 .AboutusPage {
   min-height: 100vh;
-  padding: 11rem 2rem 0 2rem;
-  margin: 0 auto;
+  padding: 11rem 0 0 0;
   background-color: var(--page-color);
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .aboutBannerImage {
-  min-height: 400px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-xl);
 }
 
 .aboutBannerImage img {
-  height: 100%;
   width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.TeamSection {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: var(--spacing-xxxl) var(--spacing-xl);
 }
 
 .TeamHeading {
@@ -19,30 +31,89 @@
   font-weight: 400;
   border-bottom: 1px solid var(--dark-text-color);
   padding-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
 }
 
 .TeamSectionGrid {
-  padding: var(--spacing-xl) 0;
   display: grid;
-  gap: 25px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-xl);
+  width: 100%;
 }
 
 @media (min-width: 2560px) {
+  .AboutusPage {
+    padding-top: 13rem;
+  }
+
   .TeamHeading {
     font-size: 3.8rem;
-    margin-top: 3rem;
+  }
+
+  .aboutBannerImage,
+  .TeamSection {
+    max-width: 2000px;
   }
 }
 
-@media (min-width: 1400px) {
-}
-
-@media (min-width: 1200px) and (max-width: 1399px) {
-  .aboutBannerImage {
-    width: 1144px;
+@media (max-width: 1200px) {
+  .TeamSectionGrid {
+    gap: var(--spacing-lg);
+  }
+  
+  .aboutBannerImage,
+  .TeamSection {
+    padding-left: var(--spacing-lg);
+    padding-right: var(--spacing-lg);
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 992px) {
+  .TeamSectionGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .TeamHeading {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .AboutusPage {
+    padding-top: 9rem;
+  }
+
+  .aboutBannerImage,
+  .TeamSection {
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+  }
+
+  .TeamHeading {
+    font-size: 2rem;
+  }
+
+  .TeamSectionGrid {
+    gap: var(--spacing-md);
+  }
+}
+
+@media (max-width: 576px) {
+  .AboutusPage {
+    padding-top: 7rem;
+  }
+
+  .aboutBannerImage,
+  .TeamSection {
+    padding-left: var(--spacing-sm);
+    padding-right: var(--spacing-sm);
+  }
+
+  .TeamSectionGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .TeamHeading {
+    font-size: 1.8rem;
+  }
 }
