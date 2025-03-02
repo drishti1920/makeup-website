@@ -311,7 +311,6 @@
 }
 
 @media (max-width: 575px) {
-  
   .navbar-center {
     width: 70px;
   }
@@ -320,14 +319,13 @@
     width: 100%;
   }
 
-  .menu-link{
+  .menu-link {
     font-size: 1.5rem;
   }
 
-  .reservation-button{
+  .reservation-button {
     display: none;
   }
-  
 }
 
 /* Add smooth transitions for mobile menu */

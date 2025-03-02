@@ -99,6 +99,21 @@
 }
 
 /* Responsive Design */
+
+@media (min-width: 2560px) {
+  .location-text{
+    font-size: 25px;
+  }
+  .privacy-link{
+    font-size: 25px;
+  }
+  .phone-number{
+    font-size: 25px;
+  }
+  .email{
+    font-size: 25px;
+  }
+}
 @media screen and (max-width: 768px) {
   .footer-container {
     flex-direction: column;

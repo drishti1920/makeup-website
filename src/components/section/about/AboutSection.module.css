@@ -61,8 +61,11 @@
 
   .sideText {
     font-size: 1.8rem;
-    max-width: 780px;
+    max-width: 945px;
   }
+
+  
+  
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {

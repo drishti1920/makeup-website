@@ -19,7 +19,7 @@
 }
 
 .quote-mark img {
-  max-width: 40px;
+  width: 40px;
   height: auto;
 }
 
@@ -55,7 +55,7 @@
   overflow: hidden;
   border: 2px solid white;
   margin-right: -12px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .author-image {
@@ -86,45 +86,45 @@
   .testimonial-section {
     padding: 60px 40px;
   }
-  
+
   .testimonial-container {
     flex-direction: row;
     align-items: flex-start;
   }
-  
+
   .quote-mark {
     width: 60px;
     margin-right: 20px;
     justify-content: flex-start;
   }
-  
+
   .quote-mark img {
-    max-width: 50px;
+    width: 50px;
   }
-  
+
   .testimonial-content {
     padding-top: 0;
   }
-  
+
   .testimonial-quote {
     font-size: 26px;
     text-align: left;
   }
-  
+
   .testimonial-author {
     flex-direction: row;
     align-items: center;
   }
-  
+
   .author-images {
     margin-bottom: 0;
   }
-  
+
   .author-info {
     margin-left: 16px;
     text-align: left;
   }
-  
+
   .author-image-container {
     width: 44px;
     height: 44px;
@@ -132,50 +132,38 @@
 }
 
 /* Desktop styles */
-@media (min-width: 1024px) {
-  .testimonial-section {
-    padding: 80px 60px;
+@media (min-width: 2560px) {
+  .quote-mark {
+    margin-right: 80px;
   }
-  
+
   .quote-mark img {
-    max-width: 60px;
+    width: 135px;
   }
-  
+
+  .testimonial-container {
+    max-width: 1400px;
+  }
+
   .testimonial-quote {
-    font-size: 32px;
+    font-size: 44px;
     line-height: 1.4;
     margin-bottom: 32px;
   }
-  
   .author-image-container {
-    width: 48px;
-    height: 48px;
+    width: 90px;
+    height: 90px;
   }
-  
-  .author-name {
-    font-size: 18px;
-  }
-  
-  .author-title {
-    font-size: 15px;
-  }
-}
 
-/* Large screens */
-@media (min-width: 1440px) {
-  .testimonial-section {
-    padding: 96px 80px;
+  .author-info {
+    margin-left: 35px;
   }
-  
-  .testimonial-quote {
-    font-size: 36px;
-  }
-  
+
   .author-name {
-    font-size: 20px;
+    font-size: 28px;
   }
-  
+
   .author-title {
-    font-size: 16px;
+    font-size: 21px;
   }
 }
