@@ -1,10 +1,10 @@
 .contactContainer {
     min-height: 100vh;
     background-color: #f8f8f8;
-    padding: 2rem 1rem;
+    padding: 11rem 1rem 2rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
   
   .contactWrapper {
@@ -62,12 +62,14 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    width: 100%;
   }
   
   .formRow {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 1.5rem;
+    width: 100%;
   }
   
   .formGroup {
@@ -141,10 +143,42 @@
     color: white;
   }
   
-  /* Responsive styles */
+  /* Mobile Styles */
+  @media (max-width: 576px) {
+    .contactContainer {
+      padding: 7rem 1rem 2rem;
+    }
+    
+    .contactWrapper {
+      padding: 1.5rem;
+    }
+    
+    .contactTitle {
+      font-size: 1.75rem;
+      margin-bottom: 2rem;
+    }
+    
+    .formInput,
+    .formSelect,
+    .formTextarea,
+    .submitButton {
+      font-size: 0.9rem;
+    }
+    
+    .formLabel {
+      font-size: 0.9rem;
+    }
+    
+    .infoLabel,
+    .infoValue {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Tablet Styles */
   @media (min-width: 768px) {
     .contactContainer {
-      padding: 3rem 2rem;
+      padding: 9rem 2rem 3rem;
     }
     
     .contactWrapper {
@@ -158,10 +192,12 @@
     
     .contactContent {
       flex-direction: row;
+      gap: 4rem;
     }
     
     .contactInfo {
       width: 30%;
+      flex-shrink: 0;
     }
     
     .contactForm {
@@ -169,14 +205,15 @@
     }
     
     .formRow {
-      flex-direction: row;
+      grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
     }
   }
   
+  /* Desktop Styles */
   @media (min-width: 1024px) {
     .contactContainer {
-      padding: 4rem 2rem;
+      padding: 11rem 2rem 4rem;
     }
     
     .contactWrapper {
@@ -190,5 +227,102 @@
     .formSubmit {
       display: flex;
       justify-content: flex-start;
+    }
+  }
+  
+  /* Large Desktop Styles */
+  @media (min-width: 1400px) {
+    .contactWrapper {
+      max-width: 1400px;
+      padding: 5rem;
+    }
+    
+    .contactTitle {
+      font-size: 3.5rem;
+    }
+    
+    .formInput,
+    .formSelect,
+    .formTextarea,
+    .submitButton {
+      font-size: 1.1rem;
+      padding: 1rem;
+    }
+    
+    .formLabel {
+      font-size: 1.1rem;
+    }
+    
+    .infoLabel {
+      font-size: 1.2rem;
+    }
+    
+    .infoValue {
+      font-size: 1.1rem;
+    }
+    
+    .contactContent {
+      gap: 6rem;
+    }
+    
+    .contactInfo {
+      width: 25%;
+    }
+    
+    .contactForm {
+      width: 75%;
+    }
+  }
+  
+  /* Extra Large Screens */
+  @media (min-width: 2560px) {
+    .contactWrapper {
+      max-width: 2000px;
+      padding: 6rem;
+    }
+    
+    .contactTitle {
+      font-size: 4rem;
+      margin-bottom: 4rem;
+    }
+    
+    .formInput,
+    .formSelect,
+    .formTextarea,
+    .submitButton {
+      font-size: 1.3rem;
+      padding: 1.2rem;
+    }
+    
+    .formLabel {
+      font-size: 1.3rem;
+    }
+    
+    .infoLabel {
+      font-size: 1.4rem;
+    }
+    
+    .infoValue {
+      font-size: 1.3rem;
+    }
+    
+    .submitButton {
+      padding: 1.2rem 3rem;
+    }
+    
+    .contactContent {
+      gap: 8rem;
+    }
+    
+    .contactInfo {
+      width: 20%;
+    }
+    
+    .contactForm {
+      width: 80%;
+    }
+    
+    .formRow {
+      gap: 3rem;
     }
   }
