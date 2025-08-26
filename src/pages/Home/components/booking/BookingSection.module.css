@@ -1,0 +1,131 @@
+.booking {
+  padding: 80px 20px;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../../../assets/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.textContent {
+  text-align: left;
+}
+
+.textContent h2 {
+  font-size: 2.5rem;
+  font-family: 'Cardo', serif;
+  margin-bottom: 1rem;
+}
+
+.textContent p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contactLink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.contactLink:hover {
+  color: #e2b07b;
+}
+
+.form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.form input,
+.form select,
+.form textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 6px;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  font-size: 1rem;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+.form select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+}
+
+.form select option {
+  background: #222;
+  color: #fff;
+}
+
+.submitButton {
+  width: 100%;
+  background-color: #e2b07b !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 1rem !important;
+  font-size: 1.1rem !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.submitButton:hover {
+  background-color: #d19b66 !important;
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .textContent {
+    text-align: center;
+  }
+  
+  .contact {
+    align-items: center;
+  }
+  
+  .booking {
+    padding: 60px 16px;
+  }
+  
+  .textContent h2 {
+    font-size: 2rem;
+  }
+}
