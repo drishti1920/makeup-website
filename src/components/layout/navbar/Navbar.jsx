@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { ReactComponent as LightLogo } from "../../../assets/images/logo-light.svg";
 import { ReactComponent as DarkLogo } from "../../../assets/images/logo-dark.svg";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 const Navbar = () => {
   const location = useLocation();
@@ -61,55 +61,55 @@ const Navbar = () => {
       >
         <div className="navbar-left">
           {!isMobile && (
-            <a href="/" className="nav-link">
+            <Link to="/" className="nav-link">
               home
-            </a>
+            </Link>
           )}
         </div>
 
         <div className="navbar-center">
-          <a className="logo" href="/">
+          <Link className="logo" to="/">
             {isHome || isWhiteText ? (
               <LightLogo className="logo" />
             ) : (
               <DarkLogo className="logo" />
             )}
-          </a>
+          </Link>
         </div>
 
         <div className="navbar-right">
           <button className="menu-button" onClick={toggleMenu}>
             {isMenuOpen ? "close" : "menu"}
           </button>
-          <a href="/contacts" className="reservation-button">
+          <Link to="/contacts" className="reservation-button">
             {isMobile ? "Book" : "Reservation"}
-          </a>
+          </Link>
         </div>
       </nav>
 
       <div className={`menu-overlay ${isMenuOpen ? "is-open" : ""}`}>
         <div className="menu-content">
           <div className="menu-items">
-            <a href="/" className="menu-link">
+            <Link to="/" className="menu-link">
               Home
-            </a>
-            <a href="/services" className="menu-link">
+            </Link>
+            <Link to="/services" className="menu-link">
               Services
-            </a>
-            <a href="/gallery" className="menu-link">
+            </Link>
+            <Link to="/gallery" className="menu-link">
               Gallery
-            </a>
-            <a href="/about-us" className="menu-link">
+            </Link>
+            <Link to="/about-us" className="menu-link">
               About us
-            </a>
-            <a href="/contacts" className="menu-link">
+            </Link>
+            <Link to="/contacts" className="menu-link">
               Contacts
-            </a>
+            </Link>
           </div>
           <div className="menu-footer">
             <div className="footer-links">
-              <a href="/terms">Terms & Conditions</a>
-              <a href="/privacy">Privacy Policy</a>
+              <Link to="/terms">Terms & Conditions</Link>
+              <Link to="/privacy">Privacy Policy</Link>
             </div>
           </div>
         </div>

@@ -24,7 +24,6 @@ const AppRoutes = () => {
           <Route path="contacts" element={<Contact />} />
         </Route>
         <Route path="*" element={<NotFound />} />
-
       </Routes>
     </BrowserRouter>
   );
