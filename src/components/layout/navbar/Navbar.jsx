@@ -1,3 +1,8 @@
+  // Close menu handler for menu links
+  const handleMenuLinkClick = () => {
+    setIsMenuOpen(false);
+    document.body.style.overflow = "auto";
+  };
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { ReactComponent as LightLogo } from "../../../assets/images/logo-light.svg";
@@ -90,19 +95,19 @@ const Navbar = () => {
       <div className={`menu-overlay ${isMenuOpen ? "is-open" : ""}`}>
         <div className="menu-content">
           <div className="menu-items">
-            <Link to="/" className="menu-link">
+            <Link to="/" className="menu-link" onClick={handleMenuLinkClick}>
               Home
             </Link>
-            <Link to="/services" className="menu-link">
+            <Link to="/services" className="menu-link" onClick={handleMenuLinkClick}>
               Services
             </Link>
-            <Link to="/gallery" className="menu-link">
+            <Link to="/gallery" className="menu-link" onClick={handleMenuLinkClick}>
               Gallery
             </Link>
-            <Link to="/about-us" className="menu-link">
+            <Link to="/about-us" className="menu-link" onClick={handleMenuLinkClick}>
               About us
             </Link>
-            <Link to="/contacts" className="menu-link">
+            <Link to="/contacts" className="menu-link" onClick={handleMenuLinkClick}>
               Contacts
             </Link>
           </div>
