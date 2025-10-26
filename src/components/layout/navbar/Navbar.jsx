@@ -1,8 +1,4 @@
-  // Close menu handler for menu links
-  const handleMenuLinkClick = () => {
-    setIsMenuOpen(false);
-    document.body.style.overflow = "auto";
-  };
+
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { ReactComponent as LightLogo } from "../../../assets/images/logo-light.svg";
@@ -19,6 +15,12 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
     document.body.style.overflow = isMenuOpen ? "auto" : "hidden";
+  };
+
+    // Close menu handler for menu links
+  const handleMenuLinkClick = () => {
+    setIsMenuOpen(false);
+    document.body.style.overflow = "auto";
   };
 
   // Track scroll position
