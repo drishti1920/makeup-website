@@ -3,8 +3,8 @@ import "./PhotoGrid.css";
 import grid1 from "../../../assets/images/grid1.png";
 import grid2 from "../../../assets/images/grid2.png";
 import grid3 from "../../../assets/images/grid3.png";
-import grid4 from "../../../assets/images/grid4.jpg";
-import grid5 from "../../../assets/images/grid5.jpg";
+import grid4 from "../../../assets/images/grid4.png";
+import grid5 from "../../../assets/images/grid5.png";
 
 const PhotoGrid = () => {
 

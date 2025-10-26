@@ -1,19 +1,16 @@
 import React from 'react';
 import './Footer.css';
+import { ReactComponent as DarkLogo } from "../../../assets/images/logo-dark.svg";
+import { useLocation, Link } from "react-router-dom";
+
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <div className="footer-logo-section">
-          <div className="logo-container">
-            <h1 className="logo-text">
-              HOUSE<br />
-              ON THE<br />
-              CLOUDS
-            </h1>
-          </div>
-        </div>
+        <Link className="logo" to="/">
+              <DarkLogo className="logo" />   
+          </Link>
 
         <div className="footer-middle-section">
           <p className="location-text">Jaipur, Rajasthan</p>
@@ -22,7 +19,7 @@ const Footer = () => {
 
         <div className="footer-contact-section">
           <p className="phone-number">+91 8696144810</p>
-          <p className="email">hello@thestorytimeliners.com</p>
+          <p className="email">hello@shakshimakeup.com</p>
         </div>
       </div>
     </footer>

@@ -79,7 +79,7 @@ const Navbar = () => {
             {isHome || isWhiteText ? (
               <LightLogo className="logo" />
             ) : (
-              <DarkLogo className="logo" />
+              <DarkLogo className="logo" />   
             )}
           </Link>
         </div>

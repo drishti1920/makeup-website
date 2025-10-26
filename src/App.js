@@ -4,6 +4,8 @@ import './styles/typography.css';
 import './styles/variables.css';
 import AppRoutes from './routes';
 import SplashScreen from './components/common/splash-screen/SplashScreen';
+import ScrollToTop from './components/common/ScrollToTop';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -18,10 +20,11 @@ function App() {
   }, []);
 
   return (
-    <>
+    <BrowserRouter>
+      <ScrollToTop />
       <SplashScreen />
       <AppRoutes />
-    </>
+    </BrowserRouter>
   );
 }
 
