@@ -1,15 +1,15 @@
 import React from "react";
 import styles from "./Services.module.css";
-import service1 from "../../../../assets/images/face-service.jpg";
-import service2 from "../../../../assets/images/hair-service.jpg";
-import service3 from "../../../../assets/images/hand-service.jpg";
+import service1 from "../../../../assets/images/makeup-service.png";
+import service2 from "../../../../assets/images/hairstyle-service.png";
+import service3 from "../../../../assets/images/manicure-service.png";
 import Card from "../../../../components/common/card/Card";
 
 const Services = () => {
   const services = [
-    { src: service1, alt: "Face & Body Image", name: "Face & Body" },
-    { src: service2, alt: "Hair Treatments Image", name: "Hair Treatments" },
-    { src: service3, alt: "Hand & Feet Image", name: "Hand & Feet" },
+    { src: service1, alt: "Makeup Image", name: "Makeup Services" },
+    { src: service2, alt: "Hairstyle Image", name: "Hairstyle Services" },
+    { src: service3, alt: "Manicure Image", name: "Manicure Services" },
   ];
 
   return (

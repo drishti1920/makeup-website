@@ -18,14 +18,15 @@ const SplashScreen = () => {
     <div className={styles.splashScreen}>
       <div className={styles.content}>
         <div className={styles.logo}>
-          <span className={styles.letter}>M</span>
-          <span className={styles.letter}>Y</span>
+          <span className={styles.letter}>S</span>
+          <span className={styles.letter}>H</span>
+          <span className={styles.letter}>A</span>
           <span className={styles.letter}>K</span>
-          <span className={styles.letter}>E</span>
-          <span className={styles.letter}>R</span>
-          <span className={styles.letter}>Y</span>
+          <span className={styles.letter}>S</span>
+          <span className={styles.letter}>H</span>
+          <span className={styles.letter}>I</span>
         </div>
-        <div className={styles.tagline}>Beauty Salon</div>
+        <div className={styles.tagline}>Where Beauty Meets Art</div>
         <div className={styles.loader}>
           <div className={styles.loaderBar}></div>
         </div>

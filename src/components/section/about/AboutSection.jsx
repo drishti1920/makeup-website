@@ -8,19 +8,16 @@ const AboutSection = () => {
         <div className={styles.contentWrapper}>
           <div className={styles.mainContent}>
             <h2 className={styles.heading}>
-              We are born in Europe, raised in New York.
+                   Established in 2003 in Jaipur, Shakshi is a luxury salon dedicated to women’s beauty and care.
             </h2>
             <p className={styles.description}>
-              Mykery creates luxurious makeup and hairstyles that 
-              is easy to take care of everyday.
             </p>
           </div>
           
           <div className={styles.sideContent}>
             <p className={styles.sideText}>
-              Contrary to popular belief, Lorem Ipsum is not simply random text. It 
-              has roots in a piece of classical Latin literature from 45 BC, making it 
-              over 2000 years old. Richard McClintock.
+               We specialize in salon services, professional makeup, and elegant hairstyles for weddings, events, and everyday looks. With years of expertise, we blend modern trends with timeless elegance to bring out your natural beauty.
+       
             </p>
           </div>
         </div>

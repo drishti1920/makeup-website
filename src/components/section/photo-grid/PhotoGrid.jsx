@@ -1,8 +1,8 @@
 import React from "react";
 import "./PhotoGrid.css";
-import grid1 from "../../../assets/images/grid1.jpg";
-import grid2 from "../../../assets/images/grid2.jpg";
-import grid3 from "../../../assets/images/grid3.jpg";
+import grid1 from "../../../assets/images/grid1.png";
+import grid2 from "../../../assets/images/grid2.png";
+import grid3 from "../../../assets/images/grid3.png";
 import grid4 from "../../../assets/images/grid4.jpg";
 import grid5 from "../../../assets/images/grid5.jpg";
 

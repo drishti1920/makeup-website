@@ -68,7 +68,7 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-center">
-          <a href="/">
+          <a className="logo" href="/">
             {isHome || isWhiteText ? (
               <LightLogo className="logo" />
             ) : (

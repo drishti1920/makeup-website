@@ -8,8 +8,8 @@ const HeroSection = () => {
     <div className={styles.home}>
        <div className={styles.overlay}>   
         <div className={styles.heroContent}>
-          <h1 className={styles.title}>Mykery Beauty Salon</h1>
-          <p className={styles.subtitle}>For women and men</p>
+          <h1 className={styles.title}>Shakshi Salon</h1>
+          <p className={styles.subtitle}>For women</p>
           <p className={styles.subheadline}>Luxury makeup & hairstyling for weddings, fashion & everyday beauty</p>
           <div className={styles.ctaButtons}>
             <Button as={Link} to="/contacts" className={styles.primaryBtn}>Book Now</Button>
