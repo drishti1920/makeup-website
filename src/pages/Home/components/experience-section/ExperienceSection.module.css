@@ -1,0 +1,160 @@
+
+.experienceSection {
+  background: #fff7f3;
+  padding: var(--spacing-xxxl) var(--spacing-xxl);
+  
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 3rem;
+}
+
+.leftPane {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+  min-width: 0;
+}
+
+.sectionLabel {
+  text-transform: uppercase;
+  font-size: 0.92rem;
+  letter-spacing: 2px;
+  color: #c97b63;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  opacity: 0.8;
+}
+
+.heading {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #3d2c29;
+  margin-bottom: 0.7rem;
+  line-height: 1.13;
+  font-family: 'Cardo', serif;
+}
+
+.description {
+  font-size: 1.13rem;
+  color: #5a3a2e;
+  line-height: 1.7;
+  margin-bottom: 0.7rem;
+  font-weight: 400;
+}
+
+.methodology {
+  margin-top: 1.2rem;
+}
+
+.methodologyTitle {
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #3d2c29;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.methodologyList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.methodologyList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: #c97b63;
+  margin-top: 0.1rem;
+  flex-shrink: 0;
+}
+
+.stepTitle {
+  font-weight: 600;
+  color: #3d2c29;
+  font-size: 1.08rem;
+  display: block;
+}
+
+.stepDesc {
+  color: #7a4a2f;
+  font-size: 0.99rem;
+  display: block;
+  margin-top: 0.1rem;
+}
+
+.rightPane {
+  flex: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+.videoWrapper {
+  width: 100%;
+  max-width: 370px;
+  aspect-ratio: 4/5;
+  overflow: hidden;
+  box-shadow: 0 4px 24px 0 rgba(201,123,99,0.13);
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    gap: 2.2rem;
+    align-items: stretch;
+  }
+  .rightPane {
+    justify-content: flex-start;
+    margin-top: 0.5rem;
+  }
+  .videoWrapper {
+    max-width: 100%;
+    aspect-ratio: 16/9;
+    min-height: 180px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    gap: 1.2rem;
+  }
+  .heading {
+    font-size: 1.3rem;
+  }
+  .description, .methodologyTitle, .stepTitle, .stepDesc {
+    font-size: 0.98rem;
+  }
+  .videoWrapper {
+    min-height: 120px;
+  }
+}

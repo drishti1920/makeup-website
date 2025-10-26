@@ -4,6 +4,7 @@ import HeroSection from "./components/hero-section/HeroSection";
 import Contact from "../../components/section/contact/Contact";
 import Services from "./components/services/Services";
 import PhotoGrid from "../../components/section/photo-grid/PhotoGrid";
+import ExperienceSection from "./components/experience-section/ExperienceSection";
 import AboutSection from "../../components/section/about/AboutSection";
 import TestimonialsSection from "./components/testimonials/TestimonialsSection";
 import PackagesSection from "./components/packages/PackagesSection";
@@ -14,8 +15,9 @@ const Home = () => {
     <>
       <HeroSection />
       <AboutSection />
-      <Services />
-      <PhotoGrid />
+  <Services />
+  <ExperienceSection />
+  <PhotoGrid />
       <TestimonialsSection />
       <PackagesSection />
       <BookingSection />
