@@ -1,11 +1,13 @@
-import React from 'react';
+import Heading from '../../components/common/heading/Heading';
+import styles from "../about-us/AboutUs.module.css";
 import ServicesSection from '../../components/section/services/ServicesSection';
-import styles from './Services.module.css';
 
 const Services = () => {
   return (
-    <div className={styles.servicesPage}>
+    <div className={styles.AboutusPage}>
+      <Heading heading="Services" />
       <ServicesSection />
+  
     </div>
   );
 };

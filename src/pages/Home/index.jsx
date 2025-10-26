@@ -8,19 +8,19 @@ import ExperienceSection from "./components/experience-section/ExperienceSection
 import AboutSection from "../../components/section/about/AboutSection";
 import TestimonialsSection from "./components/testimonials/TestimonialsSection";
 import PackagesSection from "./components/packages/PackagesSection";
-import BookingSection from "./components/booking/BookingSection";
+// import BookingSection from "./components/booking/BookingSection";
 
 const Home = () => {
   return (
     <>
       <HeroSection />
       <AboutSection />
-  <Services />
-  <ExperienceSection />
-  <PhotoGrid />
+      <Services />
+      <ExperienceSection />
+      <PhotoGrid />
       <TestimonialsSection />
       <PackagesSection />
-      <BookingSection />
+      {/* <BookingSection /> */}
       <Contact />
     </>
   );
